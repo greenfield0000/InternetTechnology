@@ -1,0 +1,29 @@
+<div class="content">
+    <div id="box1">
+        <h2>
+            Добро пожаловать на главную страницу!
+        </h2>
+        <img class="left" src="" width="130" height="160" alt="" />
+        <p>
+            Данный сайт предназначен для демонстрации лабораторных работ
+            по курсу программирования "Интернет технологии". Для того, чтобы просмотреть
+            реализованные программы, необходимо зарегистрироваться и авторизоваться.
+        </p>
+    </div>
+    <div id="box2">
+        <h3 class="extended-text">
+            Необходимый минимум для сдачи лабораторных:
+        </h3>
+        <ul class="imageList">
+            <li class="left" ng-repeat="labs in labsListContent">
+                <div class="wrap-content">
+                    <img class="left" src="" width="80" height="80" alt="" /> 
+                    <details open>
+                        <summary class="summary">{{labs.name}}</summary>
+                        <p>{{labs.note}}</p>
+                    </details>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="content" ng-controller="authorizationPageCtrl">
+    <div class="header-text">Авторизация</div>
+    <div>
+        <span>Введите логин</span>
+        <input type="text" ng-model="autorizationLogin" />
+    </div>
+    <div>
+        <span>Введите пароль</span>
+        <input type="password" ng-model="autorizationPassword"/>
+    </div>
+    <button ng-click="authorization()">Авторизоваться</button>
+    <button ng-click="registry()">Регистрация</button>
+</div>

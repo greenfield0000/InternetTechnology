@@ -1,0 +1,18 @@
+<div class="content" ng-controller="registryPageCtrl">
+    <div class="header-text">Регистрация</div>
+    <div>
+        <span>Введите ваше имя</span>
+        <input type="text" ng-model="registryName"/>
+        <!--<input type="text" ng-model="registryName" ng-model-options="{getterSetter: true}"/>-->
+    </div>
+    <div>
+        <span>Введите логин</span>
+        <input type="text" ng-model="registryLogin"/>
+    </div>
+    <div>
+        <span>Введите пароль</span>
+        <input type="password" ng-model="registryPassword"/>
+    </div>
+    <button ng-click="registry()">Зарегистрироваться</button>
+    <button ng-click="goToAutorization()">Назад к авторизации</button>
+</div>
