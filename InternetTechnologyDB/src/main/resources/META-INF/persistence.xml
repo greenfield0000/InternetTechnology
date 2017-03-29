@@ -5,9 +5,11 @@
     <class>com.mycompany.internettechnologydb.entity.Users</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Testing"/>
-      <property name="javax.persistence.jdbc.user" value="romas"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="romas"/>
+      <property name="javax.persistence.jdbc.password" value="postgres"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
     </properties>
   </persistence-unit>
 </persistence>
